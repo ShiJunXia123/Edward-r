@@ -1,0 +1,106 @@
+.piccrop-wrapper {
+  padding: 20px;
+
+  .displayNone {
+    display: none;
+  }
+
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border-radius: 4px;
+    padding: 20px;
+  }
+
+  &__div-text {
+    color: #757c82;
+    line-height: 30px;
+  }
+
+  &__left {
+    text-align: center;
+  }
+
+  &__img-empty {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+  }
+
+  &__div-img-box {
+    position: relative;
+    background-color: #cae0f3;
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    margin: 5px 0;
+  }
+
+  &-handler {
+    position: absolute;
+    top: 0;
+    border: 1px dashed #eee;
+    cursor: move;
+    left: 10%;
+    top: 10%;
+
+    &-bg {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background: #000;
+      opacity: 0.03;
+    }
+
+    &-squire {
+      width: 7px;
+      height: 7px;
+      border: 1px solid #26d3bc;
+      position: absolute;
+      background-color: #26d3bc;
+      opacity: 0.5;
+    }
+  }
+
+  &__right {
+    padding: 20px;
+
+    &__prelook {
+      display: flex;
+      margin-top: 60px;
+      justify-content: space-around;
+      p {
+        text-align: center;
+      }
+    }
+
+    &__img-box {
+      visibility: hidden;
+    }
+
+    &__uploadbox {
+      width: auto;
+      height: auto;
+      text-align: center;
+      background-color: #dff8f4;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    &__cropimg {
+      position: absolute;
+      visibility: hidden;
+    }
+
+    .picCropWrapper__img-empty {
+      position: relative;
+      top: 20%;
+      left: 0%;
+    }
+  }
+
+  &__text-color {
+    color: #26d3bc;
+  }
+}
